@@ -1,0 +1,453 @@
+/* 글꼴 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* CSS 초기화 과정 */
+* {
+    margin:0;
+    padding:0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: #000000;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: unset;
+}
+ol, ul {
+    list-style: none;
+}
+/* Page Wrapper 부분 */
+#page-wrapper {
+    width: 1512px;
+    height: 982px;
+}
+
+/* Header 부분 */
+#header {
+    position: fixed;
+    height: 64px;
+    left: 0; top: 0; right: 0;
+    background: linear-gradient(0deg, #000000, #000000), #595959;
+}
+
+/* Header 구간의 Page Icon */
+.header-page_icon {
+    position: relative;
+    width: 268px;
+    height: 35px;
+    left: 130px;
+    top: 15px;
+}
+.page-icon {
+    position: absolute;
+    width: 35px;
+    left: 0px;
+    top: 0%;
+
+    background: #FAFAFA;
+    border-radius: 10px;
+}
+.page-title_name {
+    position: absolute;
+    width: 260px;
+    height: 30px;
+    left: 44px;
+    top: 1px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+/* header 기능 창 */
+.header-functions {
+    position: absolute;
+    width: 462px;
+    height: 47px;
+    top: 8px;
+    right: 160px;
+}
+/* 검색창 바로가기 버튼 */
+.search-engine img {
+    position: absolute;
+    top: 14px;
+    left: 92px;
+}
+/* 페이지 리스트 바로가기 버튼 */
+.page-list img {
+    position: absolute;
+    top: 14px;
+    left: 43px;
+}
+/* 다크모드 변환 버튼 */
+.theme-toggle {
+    position: absolute;
+    top: 14px;
+    left: 0px;
+}
+/* Goolge 검색창 */
+.search-bar {
+    position: absolute;
+    top: 7px;
+    right: 86px;
+    width:242px;
+    height:35px;
+}
+/* Google 간단 검색바 */
+.search-bar img {
+    position: absolute;
+    top: 5px;
+    left: 8px;
+}
+.bar{
+    position: absolute;
+    width:242px;
+    height:35px;
+    top: 0px;
+    left: 0px;
+    border-radius: 50px;
+    border:2px solid #dcdcdc;
+}
+.bar:hover{
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+}
+.bar:focus-within{
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+    outline:none;
+}
+.searchbar{
+    position: absolute;
+
+    left: 40px;
+    height:31px;
+    padding: 4.5px;
+    border:none;
+    width:185px;
+    font-size:16px;
+    background: #000000;
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    outline: none;
+}
+/* Header 프로필 아이콘 */
+.header-profile {
+    width: 65px;
+    height: 47px;
+    position: absolute;
+    top: 0px; right: 0px;
+}
+.h-profile-img {
+    width: 47px;
+    position: absolute;
+    top: 0px; right: 18px;
+}
+.h-profile-tri {
+    position: absolute;
+    top: 19px;
+    left: 53px;
+    width: 0px;
+    height: 0px;
+    border-bottom: calc(6px * 1.732) solid #FFFFFF;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    transform: rotate(180deg);
+
+}
+
+/* Content Container 부분 */
+#content-container {
+    width: 1512px;
+    height: 916px;
+    margin: 0 auto;
+}
+
+/* 메인화면 프로필 창 */
+.profile {
+    width: 282px;
+    height: 918px;
+    position: fixed;
+    top: 64px;
+    left: 0px;
+    background: #000000;
+}
+.main-profile-img {
+    width: 150px;
+    position: absolute;
+    top: 56px;
+    left: 66px;
+}
+.main-profile-nickname {
+    position: absolute;
+    top: 239px;
+    left: 56.4px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.main-profile-introduce {
+    position: absolute;
+    top: 287px;
+    left: 42.805px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.profile-nav {
+    width: 167px;
+    height: 229px;
+    position: absolute;
+    top: 369px;
+    left: 56px;
+}
+.nav-home img {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+
+}
+.nav-home span {
+    position: absolute;
+    left: 25.75%;
+    right: 0.6%;
+    top: 3.93%;
+    bottom: 87.34%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+.nav-profile img {
+    position: absolute;
+    left: 0.6%;
+    right: 82.63%;
+    top: 23.14%;
+    bottom: 64.63%;
+
+}
+.nav-profile span {
+    position: absolute;
+    left: 25.75%;
+    right: 0.6%;
+    top: 24.45%;
+    bottom: 65.07%;
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+.nav-pages img {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    left: 2px;
+    top: 105px;
+}
+.nav-pages span {
+    position: absolute;
+    left: 25.75%;
+    right: 0.6%;
+    top: 45.85%;
+    bottom: 43.67%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+.nav-tages img {
+    position: absolute;
+    width: 29px;
+    height: 29px;
+    left: 3px;
+    top: 151px;
+}
+.nav-tages span {
+    position: absolute;
+    left: 25.75%;
+    right: 0.6%;
+    top: 67.25%;
+    bottom: 22.27%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+.nav-about img {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 2px;
+    top: 201px;
+}
+.nav-about span {
+    position: absolute;
+    left: 26.35%;
+    right: 0%;
+    top: 88.65%;
+    bottom: 0.87%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+.profile-footer {
+    width: 185px;
+    height: 32px;
+    position: absolute;
+    top: 828px;
+    left: 49px;
+    bottom: 56px;
+}
+.github-icon {
+    position: absolute;
+    left: -0.54%;
+    right: 84.32%;
+    top: 3.12%;
+    bottom: 3.12%;
+}
+.mail-icon {
+    position: absolute;
+    left: 27.57%;
+    right: 55.14%;
+    top: 0%;
+    bottom: 0%;
+}
+.theme_change-icon {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 108px;
+    top: 5px;
+}
+.search_web-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 154px;
+    top: 1px;
+}
+
+/* 오른쪽 내비게이션 */
+.right-nav {
+    position: fixed;
+    width: 230px;
+    height: 916px;
+    top: 64px;
+    right: 0;
+    background: #000000;
+}
+.in-this-webpage {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 19.21%;
+    bottom: 55.35%;
+}
+.quotation-line_web {
+    position: absolute;
+    left: 5.85px;
+    top: 33px;
+    width: 200px;
+
+    border: 1px solid #FFFFFF;
+    transform: rotate(90deg);
+}
+.webpage-container {
+    position: absolute;
+    left: 9.75%;
+    right: 19.07%;
+    top: 22.82%;
+    bottom: 55.35%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 33px;
+    /* or 254% */
+
+    color: #C8C8C8;
+}
+
+
+/* Article 부분 */
+.article {
+    overflow: hidden;
+    margin: 64px 230px 0px 282px;
+    background-color: #000000;
+    width: 1000px;
+}
+.article-area {
+    margin-top: 67px;
+    margin-left: 30px;
+    background: #000000;
+    color: #c6c6c6;
+    line-height: 40px;
+}

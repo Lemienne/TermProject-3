@@ -1,0 +1,149 @@
+/* Header 부분 */
+#header {
+    position: fixed;
+    height: 64px;
+    left: 0; top: 0; right: 0;
+    background: #fbfbfb;
+}
+
+/* Header 구간의 Page Icon */
+.header-page_icon {
+    position: absolute;
+    width: 268px;
+    height: 35px;
+    left: 130px;
+    top: 15px;
+}
+.page-icon {
+    position: absolute;
+    width: 35px;
+    left: 0px;
+    top: 0%;
+
+    background: #131313;
+    border-radius: 10px;
+}
+.page-title_name {
+    position: absolute;
+    width: 260px;
+    height: 30px;
+    left: 44px;
+    top: 1px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+
+    color: #131313;
+}
+/* header 기능 창 */
+.header-functions {
+    position: absolute;
+    width: 462px;
+    height: 47px;
+    top: 8px;
+    right: 160px;
+}
+
+/* 페이지 리스트 바로가기 버튼 */
+.page-list img {
+    position: absolute;
+    top: 14px;
+    left: 85px;
+}
+.page-list {
+    opacity: 1.0;
+}
+.page-list:hover {
+    opacity: 0.7;
+}
+
+/* 다크모드 변환 버튼 */
+.theme-toggle img {
+    position: absolute;
+    top: 14px;
+    left: 43px;
+}
+.theme-toggle {
+    opacity: 1.0;
+}
+.theme-toggle:hover {
+    opacity: 0.7;
+}
+
+/* Goolge 검색창 */
+.search-bar {
+    position: absolute;
+    top: 7px;
+    right: 86px;
+    width:242px;
+    height:35px;
+}
+
+/* Google 간단 검색바 */
+.search-bar img {
+    position: absolute;
+    top: 5px;
+    left: 8px;
+}
+.bar{
+    position: absolute;
+    width:242px;
+    height:35px;
+    top: 0px;
+    left: 0px;
+    border-radius: 50px;
+    border:2px solid #131313;
+}
+.bar:hover{
+    box-shadow: 1px 1px 8px 1px #131313;
+}
+.bar:focus-within{
+    box-shadow: 1px 1px 8px 1px #131313;
+    outline:none;
+}
+.searchbar{
+     position: absolute;
+
+    left: 40px;
+    height:31px;
+    border:none;
+    width:185px;
+    font-size:16px;
+    background: #fbfbfb;
+    margin: 0px;
+    padding: 2.5px 0 0 0;
+    color: #131313;
+    outline: none;
+}
+.search-bar input::placeholder {
+    color: #131313;
+}
+/* Header 프로필 아이콘 */
+.header-profile {
+    width: 65px;
+    height: 47px;
+    position: absolute;
+    top: 0px; right: 0px;
+}
+.h-profile-img {
+    width: 47px;
+    position: absolute;
+    top: 0px; right: 18px;
+}
+.h-profile-tri {
+    position: absolute;
+    top: 19px;
+    left: 53px;
+    width: 0px;
+    height: 0px;
+    border-bottom: calc(6px * 1.732) solid #131313;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    transform: rotate(180deg);
+
+}

@@ -1,0 +1,48 @@
+/* 글꼴 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* CSS 초기화 과정 */
+* {
+    margin:0;
+    padding:0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: #131313;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: unset;
+}
+ol, ul {
+    list-style: none;
+}
+/* Page Wrapper 부분 */
+#page-wrapper {
+    width: 1512px;
+    height: 982px;
+}
+
+/* Content Container 부분 */
+#content-container {
+    width: 1512px;
+    height: 916px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
